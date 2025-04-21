@@ -140,7 +140,7 @@ resource "aws_ecs_task_definition" "flask_app" {
   container_definitions = jsonencode([
     {
       name      = var.app_name
-      image     = "YOUR_ECR_IMAGE_URL"
+      image     = "705211342885.dkr.ecr.us-west-1.amazonaws.com/qb-ecr-repo:latest"
       essential = true
       portMappings = [
         {
